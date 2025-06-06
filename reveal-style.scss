@@ -37,6 +37,12 @@ $presentation-font-size-root: 36px !default;
       }
     }
   }
+  // reduce default margin on .reveal p
+  table {
+    p {
+      margin-top: 0.5em;
+    }
+  }
 }
 
 .illustration {
@@ -96,5 +102,12 @@ section#diagrams {
     p {
       margin-top: 10px;
     }
+  }
+}
+
+#quarto-formats-1, #quarto-formats-2 {
+  table {
+    margin: 0;
+    width: 100%;
   }
 }
