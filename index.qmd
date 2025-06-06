@@ -614,6 +614,55 @@ gt(temps) |>
 ::: footer
 :::
 
+## Easy Document Branding {.smaller}
+
+::: {.columns}
+
+::: {.column}
+
+::: {.callout-note appearance="minimal" title="Unified branding with a simple YAML file."}
+
+YAML file follows a common schema that can be used across Quarto, Shiny, and other tools.
+
+More at: <https://posit-dev.github.io/brand-yml/>
+:::
+
+:::
+
+::: {.column}
+![](images\brand-yml-wide-color.svg)
+:::
+
+:::
+
+```{.yml filename="_brand.yml"}
+meta: 
+  # Key identity information, name of the company, links to brand guidelines, etc.
+
+color:
+  # Semantic colors, e.g. primary, secondary, success, warning, etc. 
+  # color.palette: Named colors in the brand’s color palette.
+
+typography:
+  # Font family, weight, style, color, and line height for key elements, 
+  # e.g. base, headings and monospace text. 
+  # typography.fonts: Font definitions for Google, remote or bundled fonts.
+
+logo:
+  # Files or links to the brand’s logo at various sizes.
+
+defaults:
+  # Additional context-specific settings beyond the basic brand colors and typography. 
+  # These could be options, for example, that are used by Bootstrap in Quarto or Shiny. 
+```
+
+Works for HTML and PDF through Typst.
+
+::: footer
+See [Announcement Blog Post](https://posit.co/blog/unified-branding-across-posit-tools-with-brand-yml/) and [Quarto Integration](https://quarto.org/docs/authoring/brand.html)
+:::
+
+
 ## Quarto Extensions {.smaller}
 
 ::: {.callout-note}
