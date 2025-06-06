@@ -632,6 +632,7 @@ More at: <https://posit-dev.github.io/brand-yml/>
 
 :::
 
+::: {.make-smaller}
 ```{.yml filename="_brand.yml"}
 meta: 
   # Key identity information, name of the company, links to brand guidelines, etc.
@@ -652,6 +653,7 @@ defaults:
   # Additional context-specific settings beyond the basic brand colors and typography. 
   # These could be options, for example, that are used by Bootstrap in Quarto or Shiny. 
 ```
+:::
 
 Works for HTML and PDF through Typst.
 
