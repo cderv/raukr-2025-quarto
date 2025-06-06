@@ -786,7 +786,9 @@ It unifies and extends it</em></p>
 </div><div class="column" style="width:50%;">
 <div class="sourceCode" id="cb11" style="margin-top:16px"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> typst</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
+<div style="margin-top:5px">
 <p>This is the quickest way to do PDF with already nice features !</p>
+</div>
 <div class="columns">
 <div class="column" style="width:58%;">
 <div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># Producing a HTML Table with CSS styles</span></span>
@@ -796,18 +798,13 @@ It unifies and extends it</em></p>
 <span id="cb12-5"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="at">Jan =</span> <span class="fu">c</span>(<span class="fl">40.6</span>, <span class="fl">44.2</span>, <span class="fl">37.5</span>, <span class="fl">41.8</span>, <span class="fl">39.3</span>),</span>
 <span id="cb12-6"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="at">Jun =</span> <span class="fu">c</span>(<span class="fl">58.5</span>, <span class="fl">58.7</span>, <span class="fl">57.8</span>, <span class="fl">52.7</span>, <span class="fl">57.7</span>)</span>
 <span id="cb12-7"><a href="" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb12-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="" aria-hidden="true" tabindex="-1"></a>nice_col <span class="ot">&lt;-</span> scales<span class="sc">::</span><span class="fu">col_numeric</span>(</span>
-<span id="cb12-10"><a href="" aria-hidden="true" tabindex="-1"></a>  colorspace<span class="sc">::</span><span class="fu">diverge_hcl</span>(</span>
-<span id="cb12-11"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="dv">9</span>, <span class="at">palette =</span> <span class="st">"Green-Orange"</span></span>
-<span id="cb12-12"><a href="" aria-hidden="true" tabindex="-1"></a>  ), <span class="at">domain =</span> <span class="fu">c</span>(<span class="dv">35</span>, <span class="dv">62</span>)</span>
-<span id="cb12-13"><a href="" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb12-14"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-15"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">gt</span>(temps) <span class="sc">|&gt;</span> </span>
-<span id="cb12-16"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data_color</span>(</span>
-<span id="cb12-17"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="at">columns =</span> <span class="fu">c</span>(<span class="sc">-</span>year), </span>
-<span id="cb12-18"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="at">fn =</span> nice_col</span>
-<span id="cb12-19"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-8"><a href="" aria-hidden="true" tabindex="-1"></a>nice_col <span class="ot">&lt;-</span> scales<span class="sc">::</span><span class="fu">col_numeric</span>(</span>
+<span id="cb12-9"><a href="" aria-hidden="true" tabindex="-1"></a>  colorspace<span class="sc">::</span><span class="fu">diverge_hcl</span>(</span>
+<span id="cb12-10"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="dv">9</span>, <span class="at">palette =</span> <span class="st">"Green-Orange"</span></span>
+<span id="cb12-11"><a href="" aria-hidden="true" tabindex="-1"></a>  ), <span class="at">domain =</span> <span class="fu">c</span>(<span class="dv">35</span>, <span class="dv">62</span>)</span>
+<span id="cb12-12"><a href="" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-13"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">gt</span>(temps) <span class="sc">|&gt;</span> </span>
+<span id="cb12-14"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data_color</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="sc">-</span>year), <span class="at">fn =</span> nice_col)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:38%;">
