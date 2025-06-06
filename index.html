@@ -909,9 +909,9 @@ It unifies and extends it</em></p>
 <li><p><a href="https://quarto.org/docs/extensions/filters.html">Filters</a> are a flexible and powerful tool for introducing new global behaviors and/or new markdown rendering behaviors. For example,</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">include-code-files</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><a href="https://quarto.org/docs/extensions/formats.html">Formats</a> enable you to create new output formats by bundling together document options, templates, stylesheets, and other content.<br>
-For example, an article for Association of Computing Machinery (ACM) journal or using webr within Quarto with <a href="https://r-wasm.github.io/quarto-live">quarto-live</a></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> acm-pdf</span></span>
-<span id="cb16-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> live-html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+For example,</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> acm-pdf</span><span class="co">   # quarto-ext/acm</span></span>
+<span id="cb16-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> live-html</span><span class="co"> # r-wasm/quarto-live extension</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section>
 <section id="yaml-intelligence" class="slide level2 smaller">
