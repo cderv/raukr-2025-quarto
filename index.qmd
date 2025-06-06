@@ -570,7 +570,7 @@ format: typst
 :::
 :::
 
-::: {style="margin-top:5px"}
+::: {.reduce-p-margin}
 This is the quickest way to do PDF with already nice features ! 
 :::
 
