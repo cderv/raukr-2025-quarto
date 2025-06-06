@@ -90,3 +90,11 @@ section#diagrams {
 }
 
 
+/* SPECIFIC STYLES FOR PRESENTATION SLIDES */
+#workflow-stack {
+  .r-vstack {
+    p {
+      margin-top: 10px;
+    }
+  }
+}
