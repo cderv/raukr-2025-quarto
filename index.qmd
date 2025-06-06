@@ -570,7 +570,9 @@ format: typst
 :::
 :::
 
+::: {style="margin-top:5px"}
 This is the quickest way to do PDF with already nice features ! 
+:::
 
 :::::{.columns}
 ::: {.column width="58%"}
@@ -582,18 +584,13 @@ temps <- data.frame(
   Jan = c(40.6, 44.2, 37.5, 41.8, 39.3),
   Jun = c(58.5, 58.7, 57.8, 52.7, 57.7)
 )
-
 nice_col <- scales::col_numeric(
   colorspace::diverge_hcl(
     n = 9, palette = "Green-Orange"
   ), domain = c(35, 62)
 )
-
 gt(temps) |> 
-  data_color(
-  columns = c(-year), 
-  fn = nice_col
-)
+  data_color(columns = c(-year), fn = nice_col)
 ```
 :::
 ::: {.column width="2%"}
