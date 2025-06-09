@@ -6,7 +6,7 @@
 
 This is the repository with the resources for the Lecture at Raukr 2023 about "Introduction to Quarto"
 
-* About Raukr : https://nbisweden.github.io/workshop-RaukR-2306/
+* About Raukr : https://nbisweden.github.io/raukr-2025/
 
 * Presentation: https://cderv.github.io/raukr-2025-quarto
 
